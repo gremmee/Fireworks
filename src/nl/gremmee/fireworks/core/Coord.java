@@ -22,6 +22,9 @@ public class Coord
 
   //~ Methods --------------------------------------------------------------------------------------
 
+  /**
+   * Adds to coord together.
+   */
   public void add(Coord aOtherCoord)
   {
     setXY(this.getX() + aOtherCoord.getX(), this.getY() + aOtherCoord.getY());
