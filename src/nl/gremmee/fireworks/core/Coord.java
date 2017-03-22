@@ -1,69 +1,47 @@
 package nl.gremmee.fireworks.core;
 
-public class Coord
-{
-  //~ Instance Variables ---------------------------------------------------------------------------
+public class Coord {
 
-  private float x;
-  private float y;
+	private float x;
+	private float y;
 
-  //~ Constructors ---------------------------------------------------------------------------------
+	public Coord(Coord aCoord) {
+		this.setXY(aCoord);
+	}
 
-  public Coord(Coord aCoord)
-  {
-    this.setXY(aCoord);
-  }
+	public Coord(float aX, float aY) {
+		this.setXY(aX, aY);
+	}
 
+	/**
+	 * Adds two coords together.
+	 */
+	public void add(Coord aOtherCoord) {
+		setXY(this.getX() + aOtherCoord.getX(), this.getY() + aOtherCoord.getY());
+	}
 
-  public Coord(float aX, float aY)
-  {
-    this.setXY(aX, aY);
-  }
+	public float getX() {
+		return x;
+	}
 
-  //~ Methods --------------------------------------------------------------------------------------
+	public float getY() {
+		return y;
+	}
 
-  /**
-   * Adds to coord together.
-   */
-  public void add(Coord aOtherCoord)
-  {
-    setXY(this.getX() + aOtherCoord.getX(), this.getY() + aOtherCoord.getY());
-  }
+	public void setX(float aX) {
+		this.x = aX;
+	}
 
+	public void setXY(Coord aCoord) {
+		this.setXY(aCoord.getX(), aCoord.getY());
+	}
 
-  public float getX()
-  {
-    return x;
-  }
+	public void setXY(float aX, float aY) {
+		this.setX(aX);
+		this.setY(aY);
+	}
 
-
-  public float getY()
-  {
-    return y;
-  }
-
-
-  public void setX(float aX)
-  {
-    this.x = aX;
-  }
-
-
-  public void setXY(Coord aCoord)
-  {
-    this.setXY(aCoord.getX(), aCoord.getY());
-  }
-
-
-  public void setXY(float aX, float aY)
-  {
-    this.setX(aX);
-    this.setY(aY);
-  }
-
-
-  public void setY(float aY)
-  {
-    this.y = aY;
-  }
+	public void setY(float aY) {
+		this.y = aY;
+	}
 }

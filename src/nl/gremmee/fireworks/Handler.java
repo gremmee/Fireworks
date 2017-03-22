@@ -115,7 +115,7 @@ public class Handler
         {
           removeObject(tempObject);
 
-//          sparkle(tempObject);
+          sparkle(tempObject);
         }
       }
       else if (tempObject instanceof Sparkle)
