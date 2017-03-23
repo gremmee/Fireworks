@@ -13,14 +13,14 @@ public abstract class FireObject {
 
     private boolean isAlive;
 
-    private Color   color;
-    private Coord   acc;
-    private Coord   pos;
-    private Coord   vel;
+    private Color color;
+    private Coord acc;
+    private Coord pos;
+    private Coord vel;
 
-    private ID      id;
+    private ID id;
 
-    private Random  random = new Random();
+    private Random random = new Random();
 
     // ~ Constructors
     // ---------------------------------------------------------------------------------

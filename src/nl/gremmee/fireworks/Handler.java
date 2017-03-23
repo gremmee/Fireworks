@@ -13,11 +13,11 @@ import nl.gremmee.fireworks.objects.Sparkle;
 
 public class Handler {
 
-    LinkedList<FireObject> object  = new LinkedList<>();
+    LinkedList<FireObject> object = new LinkedList<>();
 
-    Random                 random  = new Random();
+    Random random = new Random();
 
-    private Coord          gravity = new Coord(0.0f, 0.19f);
+    private Coord gravity = new Coord(0.0f, 0.19f);
 
     public void addObject(FireObject aObject) {
         this.object.add(aObject);

@@ -15,15 +15,15 @@ import nl.gremmee.fireworks.objects.Rocket;
  */
 public class Fireworks extends Canvas implements Runnable {
 
-    public static final int WIDTH   = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
-    public static final int HEIGHT  = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+    public static final int WIDTH = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+    public static final int HEIGHT = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
 
-    private boolean         running = false;
-    private Handler         handler;
-    private int             frames  = 0;
-    private Random          random  = new Random();
+    private boolean running = false;
+    private Handler handler;
+    private int frames = 0;
+    private Random random = new Random();
 
-    private Thread          thread;
+    private Thread thread;
 
     /**
      * Creates a new Game object.
