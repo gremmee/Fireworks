@@ -1,8 +1,6 @@
 package nl.gremmee.fireworks;
 
-public enum ID
-{
-  //~ Enum constants -------------------------------------------------------------------------------
+public enum ID {
 
-  Rocket(), Particle(), Sparkle();
+    Rocket(), Particle(), Sparkle();
 }
